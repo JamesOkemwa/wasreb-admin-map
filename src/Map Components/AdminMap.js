@@ -29,7 +29,6 @@ import SelectComponent from './SelectComponent';
 const AdminMap = (props) => {
 
     const [ map, setMap ] = useState()
-    const [ featuresLayer, setFeaturesLayer ] = useState()
     const [ availableLayers, setAvailableLayers ] = useState()
 
     // get ref to div element - OpenLayers will render into this div
@@ -124,11 +123,6 @@ const AdminMap = (props) => {
     // Initialize map on first render 
     useEffect(() => {
 
-        // create and add vector source layer
-        const initialFeaturesLayer = new VectorLayer({
-            source: new VectorSource()
-        })
-
         // create map
         const initialMap = new Map({
             layers: [basemaps, administrativeLayers],
@@ -168,7 +162,6 @@ const AdminMap = (props) => {
     
         // save map and vector layer references to state
         setMap(initialMap)
-        setFeaturesLayer(initialFeaturesLayer)
 
         // map layer switcher
         const layerSwitcher = new LayerSwitcher({
@@ -196,7 +189,7 @@ const AdminMap = (props) => {
                 const obj = JSON.parse(json)
                 const layersData = obj.elements[0].elements[1].elements[2].elements
                 layersData.forEach((layer) => {
-                    if (layer.name == "Layer"){
+                    if (layer.name === "Layer"){
                         let fullLayerName = layer.elements[0].elements[0].text
                         layersList.push(fullLayerName)
                     }
@@ -208,7 +201,6 @@ const AdminMap = (props) => {
     // dynamically add the layers to the WASREB layer group.
     useEffect(() => {
         if (availableLayers) {
-            let layersList = []
             availableLayers.forEach((layer) => {
                 console.log(JSON.stringify(layer))
                 let imageLayer = new ImageLayer({
