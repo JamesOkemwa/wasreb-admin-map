@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/wasreb-admin-map/static/css/main.f32edbd4.chunk.css",
+    "main.js": "/wasreb-admin-map/static/js/main.247c1835.chunk.js",
+    "main.js.map": "/wasreb-admin-map/static/js/main.247c1835.chunk.js.map",
+    "runtime-main.js": "/wasreb-admin-map/static/js/runtime-main.37a663b5.js",
+    "runtime-main.js.map": "/wasreb-admin-map/static/js/runtime-main.37a663b5.js.map",
+    "static/css/2.3718bb9c.chunk.css": "/wasreb-admin-map/static/css/2.3718bb9c.chunk.css",
+    "static/js/2.19548e80.chunk.js": "/wasreb-admin-map/static/js/2.19548e80.chunk.js",
+    "static/js/2.19548e80.chunk.js.map": "/wasreb-admin-map/static/js/2.19548e80.chunk.js.map",
+    "static/js/3.356de0d5.chunk.js": "/wasreb-admin-map/static/js/3.356de0d5.chunk.js",
+    "static/js/3.356de0d5.chunk.js.map": "/wasreb-admin-map/static/js/3.356de0d5.chunk.js.map",
+    "index.html": "/wasreb-admin-map/index.html",
+    "static/css/2.3718bb9c.chunk.css.map": "/wasreb-admin-map/static/css/2.3718bb9c.chunk.css.map",
+    "static/css/main.f32edbd4.chunk.css.map": "/wasreb-admin-map/static/css/main.f32edbd4.chunk.css.map",
+    "static/js/2.19548e80.chunk.js.LICENSE.txt": "/wasreb-admin-map/static/js/2.19548e80.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.37a663b5.js",
+    "static/css/2.3718bb9c.chunk.css",
+    "static/js/2.19548e80.chunk.js",
+    "static/css/main.f32edbd4.chunk.css",
+    "static/js/main.247c1835.chunk.js"
+  ]
+}
